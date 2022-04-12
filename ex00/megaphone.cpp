@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 19:44:46 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/11 19:50:31 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/12 21:38:52 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,17 @@ using namespace std;
 
 int	main ()
 {
-	cout << "hello!";
+	//int	val = 2;
+	//int	*p1 = &val;
+	//int	*p2;
+
+	//p2 = &val;
+	//cout << *p1 << " - " << *p2 << endl;
+	//cin >> *p2;
+	char	*qw = new char[50];
+	getline(cin, qw);
+	cout << qw << endl;
+	//cout << *p1 << " - " << *p2 << endl;
+	//cin.get();
 	return 0;
 }
