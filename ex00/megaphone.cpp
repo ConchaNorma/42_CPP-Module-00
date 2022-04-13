@@ -6,28 +6,28 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 19:44:46 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/12 21:38:52 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/13 20:55:39 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-int	main ()
+int	main (int argc, char **argv)
 {
-	//int	val = 2;
-	//int	*p1 = &val;
-	//int	*p2;
-
-	//p2 = &val;
-	//cout << *p1 << " - " << *p2 << endl;
-	//cin >> *p2;
-	char	*qw = new char[50];
-	getline(cin, qw);
-	cout << qw << endl;
-	//cout << *p1 << " - " << *p2 << endl;
-	//cin.get();
+	if (argc < 2)
+		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
+	else
+	{
+		argv++;
+		while (*argv)
+		{
+			while (**argv)
+				cout << (char)toupper(*(*argv)++);
+			argv++;
+		}
+	}
+	cout << endl;
 	return 0;
 }
