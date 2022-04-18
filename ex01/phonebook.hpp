@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 21:36:15 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/13 21:36:34 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/15 18:26:30 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,6 @@
 # include <string>
 
 const int PHONEBOOK_SIZE = 8;
+const int COL_WIDTH = 10;
 
 #endif
