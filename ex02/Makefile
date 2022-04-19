@@ -6,13 +6,13 @@
 #    By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/13 19:39:22 by cnorma            #+#    #+#              #
-#    Updated: 2022/04/18 22:33:57 by cnorma           ###   ########.fr        #
+#    Updated: 2022/04/19 23:11:46 by cnorma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		=	phonebook
+NAME 		=	account
 
-SRC			=	phonebook.cpp	Phonebook.class.cpp	Contacts.class.cpp
+SRC			=	Account.cpp
 
 SRC_RIR 	=	./
 
@@ -20,7 +20,7 @@ OBJ_DIR		=	./obj/
 
 OBJ			=	$(patsubst $(SRC_DIR)%, $(OBJ_DIR)%, $(SRC:.cpp=.o))
 
-HEADER		=	./phonebook.hpp ./Contacts.class.hpp	./Phonebook.class.hpp
+HEADER		=	./Account.hpp
 
 CC			=	c++
 
