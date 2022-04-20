@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 22:18:05 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/18 22:26:05 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/20 22:24:49 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,37 +33,37 @@ void	PhoneBook::search_contact(void)
 {
 	if (cur_num == 0)
 	{
-		cout << "\n**** Phonebook is EMPTY! ****\n*** Please ADD a Contact ***" << endl;
+		std::cout << "\n**** Phonebook is EMPTY! ****\n*** Please ADD a Contact ***" << std::endl;
 		return ;
 	}
-	cout << "\n|  INDEX   |FIRST NAME|LAST  NAME| NICKNAME |" << endl;
+	std::cout << "\n|  INDEX   |FIRST NAME|LAST  NAME| NICKNAME |" << std::endl;
 	int i = -1;
 	while (++i < cur_num && i < PHONEBOOK_SIZE)
 		contact[i].print_contact_list(i);
-	cout << endl;
+	std::cout << std::endl;
 	display_contact_details();
 	return ;
 }
 
 void	PhoneBook::display_contact_details()
 {
-	string	str;
+	std::string	str;
 	int		index;
 
-	cout << "\n***** Enter INDEX of the Contact *****\nINDEX: ";
-	if (!getline(cin, str))
+	std::cout << "\n***** Enter INDEX of the Contact *****\nINDEX: ";
+	if (!getline(std::cin, str))
 		exit(1);
 	try
 	{
 		index = stoi(str) - 1;
 	}
-	catch (invalid_argument const& ex)
+	catch (std::invalid_argument const& ex)
 	{
 		index = -1;
 	}
 	if (index < 0 || (index >= cur_num || index > PHONEBOOK_SIZE))
-		cout << "\n**** Wrong INDEX! ****" << endl;
+		std::cout << "\n**** Wrong INDEX! ****" << std::endl;
 	else
 		contact[index].print_contact_details(index + 1);
-	cout << endl;
+	std::cout << std::endl;
 }
