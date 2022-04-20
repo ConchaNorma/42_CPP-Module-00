@@ -6,13 +6,13 @@
 #    By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/13 19:39:22 by cnorma            #+#    #+#              #
-#    Updated: 2022/04/19 23:11:46 by cnorma           ###   ########.fr        #
+#    Updated: 2022/04/20 01:36:44 by cnorma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 		=	account
 
-SRC			=	Account.cpp
+SRC			=	Account.cpp	tests.cpp
 
 SRC_RIR 	=	./
 
@@ -25,7 +25,6 @@ HEADER		=	./Account.hpp
 CC			=	c++
 
 FLAGS		=	-Wall -Wextra -Werror -g -std=c++98 -O2
-
 
 all:			$(OBJ_DIR) $(NAME)
 
