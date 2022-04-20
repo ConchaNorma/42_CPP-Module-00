@@ -6,28 +6,26 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 19:44:46 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/13 20:55:39 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/20 22:17:07 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 
-using namespace std;
-
 int	main (int argc, char **argv)
 {
 	if (argc < 2)
-		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
 	else
 	{
 		argv++;
 		while (*argv)
 		{
 			while (**argv)
-				cout << (char)toupper(*(*argv)++);
+				std::cout << (char)toupper(*(*argv)++);
 			argv++;
 		}
 	}
-	cout << endl;
+	std::cout << std::endl;
 	return 0;
 }
