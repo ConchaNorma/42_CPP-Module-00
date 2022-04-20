@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 22:18:11 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/18 22:30:02 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/04/20 22:00:14 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,6 @@
 
 # include "Contacts.class.hpp"
 # include "phonebook.hpp"
-
-//# include <iostream>
-//# include <string>
-
-//using namespace std;
-
-//const int PHONEBOOK_SIZE = 8;
-//const int COL_WIDTH = 10;
 
 class PhoneBook
 {
