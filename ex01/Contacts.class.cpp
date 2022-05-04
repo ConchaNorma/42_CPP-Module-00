@@ -6,7 +6,7 @@
 /*   By: cnorma <cnorma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 22:05:10 by cnorma            #+#    #+#             */
-/*   Updated: 2022/04/20 22:25:56 by cnorma           ###   ########.fr       */
+/*   Updated: 2022/05/04 23:11:05 by cnorma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,31 @@
  void	Contacts::fill_contact_data()
 {
 	std::cout << std::endl;
+	do{
 	std::cout << "Enter Contact's First Name: \t";
 	if (!getline(std::cin, first_name))
 		exit(1);
+	} while (first_name == "");
+	do{
 	std::cout << "Enter Contact's Last Name: \t";
 	if (!getline(std::cin, last_name))
 		exit(1);
+	} while (last_name == "");
+	do{
 	std::cout << "Enter Contact's Nickname: \t";
 	if (!getline(std::cin, nickname))
 		exit(1);
+	} while (nickname == "");
+	do{
 	std::cout << "Enter Contact's Phone number: \t";
 	if (!getline(std::cin, phone_number))
 		exit(1);
+	} while (phone_number =="");
+	do{
 	std::cout << "Enter Contact's Darkest secret: ";
 	if (!getline(std::cin, darkest_secret))
 		exit(1);
+	} while (darkest_secret == "");
 	std::cout << std::endl;
 }
 
